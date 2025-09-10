@@ -1,0 +1,62 @@
+open EjerciciosCap1;
+String err1(){
+    return "El error estaba en el identificador";
+}
+err1()
+String err2(){
+    return "Es String, con la S mayuscula";
+}
+err2()
+String err3(String who){
+    return String.format("%s, el parametro necesita un tipo de dato", who);
+}
+err3("Hola");
+String err4(){
+    return "Faltaba el ;";
+}
+err4()
+String err5(){
+    return "Faltaba el return";
+}
+err5();
+String err6(){
+return "Faltaba los parentesis";
+}
+err6();
+String err7(String quien){
+    return String.format("%s, faltaba el String en el format", quien);
+}
+err7("Hola");
+String adivinaLaPelicula(String emoji1, String emoji2, String emoji3){
+    return String.format("[%s, %s, %s]", emoji1, emoji2, emoji3);
+}
+adivinaLaPelicula("A","a","A")
+adivinaLaPelicula("🫥","🫥","🫥")
+String konnichiwa(String dare){
+    return String.format("こんにちは %s", dare);
+}
+konnichiwa("Anneke")
+String Separador(){
+    return String.format("<<<>>>");
+}
+Separador()
+String vocales(){
+    return String.format("aeiou");
+}
+vocales()
+tituloAdornado("Java")
+String tituloAdornado(String titulo){
+    return String.format("<<< %s >>>", titulo);
+}
+tituloAdornado("Java")
+tituloAdornado(">>> <<<")
+tituloAdornado("A + B")
+String adornar(String frase){
+    return String.format("<=%s=>", frase);
+}
+adornar("Java")
+concatenar("Hola","Mundo")
+String concatenar(String s1, String s2){
+    return String.format("[%s + %s]", s1,s2);
+}
+concatenar("Hola","Mundo")
