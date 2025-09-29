@@ -1,0 +1,97 @@
+int duplicar(int a){
+    var foo = a * 2;
+    return foo;
+}
+int mod(int p, int q){
+    var d = p / q;
+    var r = d * q;
+    var m = p - r;
+    return m;
+}
+mod(3,2)
+mod(4,2)
+int diferenciaDeCuadrados(int a, int b){
+    var cuadradoDeA = a * a;
+    var cuadradoDeB = b * b;
+    var diferenciaDeCuadrados = cuadradoDeA - cuadradoDeB;
+    return diferenciaDeCuadrados;
+}
+diferenciaDeCuadrados(3,4)
+diferenciaDeCuadrados(2,2)
+distanciaEntreDosPuntos(0.0,0.0,1.0,1.0)
+distanciaEntreDosPuntos(0.0,0.0,1.0,1.0)
+distanciaEntreDosPuntos(0.0,3.0,4.0,1.0)
+distanciaEntreDosPuntos(0.0,3.0,4.0,1.0)
+distanciaEntreDosPuntos(0.0,0.0,1.0,1.0)
+double distanciaEntreDosPuntos(double x1, double y1, double x2, double y2){
+    var diferenciaDeX = x2 - x1;
+    var diferenciaDeY = y2 - y1;
+    var suma = Math.pow(diferenciaDeX,2) + Math.pow(diferenciaDeY,2);
+    var raizCuadrada = Math.sqrt(suma);
+    return raizCuadrada;
+}
+distanciaEntreDosPuntos(0.0,0.0,1.0,1.0)
+distanciaEntreDosPuntos(0.0,3.0,4.0,0.0)
+fahrenheitACelsius(60.0)
+double fahrenheitACelsius(double temperatura){
+    var constante = 1.8;
+    var celsius = (temperatura - 32) / constante;
+    return celsius;
+}
+fahrenheitACelsius(60.0)
+fahrenheitACelsius(32.0)
+double gravedadSuperficial(double masa, double radio){
+    var constanteGravitacional = 6.67430e-11;
+    var radioCuadrado = Math.pow(radio,2);
+    var gravedad = (constanteGravitacional * masa) / radioCuadrado;
+    return gravedad;
+}
+gravedadSuperficial(5.972e24,6.378e6)
+double gravedadSuperficialDeLaTierra(){
+    var constanteGravitacional = 6.67430e-11;
+    var masa = 5.972e24;
+    var radio = Math.pow(6.378e6,2);
+    var gravedad = (constanteGravitacional * masa) / radio;
+    return gravedad;
+}
+gravedadSuperficialDeLaTierra()
+double gravedadSuperficialMarte(){
+    var masa = 6.421e23;
+    var radio = Math.pow(3.3972e6,2);
+    var constante = 6.67430e-11;
+    var gravedad = (constante * masa) / radio;
+    return gravedad;
+}
+gravedadSuperficialDeLaTierra()
+gravedadSuperficialMarte()
+pesoMarte(80.0)
+pesoMarte(80.0)
+pesoMarte(65.0)
+double pesoMarte(double peso){
+    var gravedadSuperficialDeLaTierra = 9.798429966;
+    var gravedadSuperficialMarte = 3.71335223;
+    var pesoEnMarte = (gravedadSuperficialMarte / gravedadSuperficialDeLaTierra) * peso;
+    return pesoEnMarte;
+}
+pesoMarte(65.0)
+pesoMarte(80.0)
+esTriangulo(3,5,1)
+esTriangulo(3,9,5)
+boolean esTriangulo(double lado1, double lado2, double lado3){ 
+    var ladoLargo = Math.max(lado1, Math.max(lado2, lado3));
+    var ladoMin1 = Math.min(lado1, Math.min(lado2, lado3));
+    var ladoMin2 = lado1 + lado2 + lado3 - ladoMin1 - ladoLargo;
+    var suma = ladoMin1 + ladoMin2;
+    return ladoLargo < suma;
+}
+esTriangulo(3.0,4.0,5.0)
+esTriangulo(17.0,10.0,7.0)
+promedio(11,16)
+promedio(2,3)
+double promedio(int edadMenor, int edadMayor){
+    double sumaEdades = edadMenor + edadMayor;
+    double promedio = sumaEdades / 2;
+    return promedio;
+}
+promedio(2,3)
+promedio(11,16)
